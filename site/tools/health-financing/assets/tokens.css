@@ -1,0 +1,134 @@
+/* Health Financing Transition Explorer
+   Single source of truth for colour, type, spacing and elevation.
+   Every value used anywhere in the product is declared here.
+
+   Series colours are not decorative. Each was snapped to the nearest step that
+   clears a lightness band, a chroma floor, adjacent-pair colour-vision-deficiency
+   separation, a normal-vision floor, and 3:1 contrast against the chart surface.
+   The financing ramp is declared in STACK ORDER, because placing other domestic
+   private between out-of-pocket and external is what lifts the worst adjacent
+   CVD separation from 7.0 to 14.0. Reordering the bands breaks that property. */
+
+:root {
+  /* Surfaces and ink */
+  --surface:            #FFFFFF;
+  --surface-sunken:     #F5F7F9;
+  --surface-raised:     #FFFFFF;
+  --page:               #F7F9FB;
+  --chart-surface:      #FFFFFF;
+
+  --ink:                #14202B;
+  --ink-secondary:      #445564;
+  --ink-muted:          #6B7C8B;
+  --ink-inverse:        #FFFFFF;
+
+  --line:               #DFE5EB;
+  --line-strong:        #C3CDD7;
+  --grid:               #EDF1F5;
+
+  /* Brand anchor. Used sparingly: masthead, active states, links. */
+  --brand:              #0B4A75;
+  --brand-strong:       #063355;
+  --brand-accent:       #0091C7;
+  --link:               #0B62A4;
+
+  /* Financing components, in stack order. Do not reorder. */
+  --c-government:       #12608F;
+  --c-out-of-pocket:    #DB5C0A;
+  --c-other-private:    #8A5A9E;
+  --c-external:         #276C3A;
+
+  /* Income groups. High income is an indigo, not the steel blue it started as:
+     at #0F6091 it was all but indistinguishable from the government band
+     #12608F, and both appear on the overview. The four still clear every check. */
+  --g-low:              #C0392B;
+  --g-lower-middle:     #CC8014;
+  --g-upper-middle:     #0E9C87;
+  --g-high:             #3D4E9C;
+
+  /* The selected entity. Deliberately outside every series ramp so a highlight
+     can never be mistaken for a category. */
+  --focus-entity:       #B5006E;
+  --focus-entity-soft:  #FBE6F2;
+
+  /* Context series: peers behind the focus entity. Identity is carried by the
+     direct end label, never by these tones. */
+  --context-1:          #7E8C99;
+  --context-2:          #9AA7B2;
+  --context-3:          #B4BFC8;
+
+  /* Status */
+  --status-good:        #1B7F4B;
+  --status-warning:     #9A6700;
+  --status-critical:    #A4262C;
+  --status-good-bg:     #E4F3EA;
+  --status-warning-bg:  #FBF0DA;
+  --status-critical-bg: #FAE7E7;
+
+  /* Missing data. Always paired with the literal words "Not available". */
+  --nodata:             #C3CDD7;
+  --nodata-hatch:       #E7ECF1;
+
+  /* Type. System stack only: no webfont, no network dependency. */
+  --sans: Arial, Helvetica, sans-serif;
+  --serif: Georgia, "Times New Roman", serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --t-display:   2.125rem;
+  --t-title:     1.5rem;
+  --t-section:   1.1875rem;
+  --t-chart:     1.0625rem;
+  --t-body:      0.9375rem;
+  --t-support:   0.875rem;
+  --t-fine:      0.8125rem;
+  --t-micro:     0.75rem;
+
+  --w-regular: 400;
+  --w-medium:  500;
+  --w-semi:    600;
+  --w-bold:    700;
+
+  --lh-tight: 1.2;
+  --lh-snug:  1.35;
+  --lh-body:  1.6;
+
+  /* Chart text is authored in absolute pixels against measured width and never
+     scales with its container. 12px is the floor at every viewport. */
+  --px-axis:        12px;
+  --px-axis-title:  12px;
+  --px-label:       12px;
+  --px-chart-title: 15px;
+  --px-chart-sub:   12px;
+  --px-source:      11px;
+
+  /* Spacing, 4px base */
+  --s1: 4px;  --s2: 8px;  --s3: 12px; --s4: 16px;
+  --s5: 20px; --s6: 24px; --s7: 32px; --s8: 40px;
+  --s9: 48px; --s10: 64px;
+
+  --radius-sm: 6px;
+  --radius:    10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(20, 32, 43, 0.06);
+  --shadow:    0 4px 14px rgba(20, 32, 43, 0.08);
+  --shadow-lg: 0 12px 32px rgba(20, 32, 43, 0.14);
+
+  --wrap: 1240px;
+  --wrap-prose: 76ch;
+
+  /* Minimum touch target. Hit areas are sized in measured pixels, never SVG units. */
+  --hit: 44px;
+
+  --focus-ring: 0 0 0 3px rgba(0, 145, 199, 0.45);
+}
+
+/* Charts stay on a light surface in every theme so exported PNGs are stable and
+   the validated contrast ratios hold. Only the page chrome follows the theme. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page:           #101820;
+    --surface-sunken: #16202A;
+  }
+}

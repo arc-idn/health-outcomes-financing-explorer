@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+work/health-outcomes/preview/
+node_modules/
+.DS_Store

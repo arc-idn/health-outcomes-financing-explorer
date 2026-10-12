@@ -1,0 +1,27 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": "50",
+    "total": 1
+  },
+  [
+    {
+      "id": "SH.DYN.NCOM.ZS",
+      "name": "Mortality from CVD, cancer, diabetes or CRD between exact ages 30 and 70 (%)",
+      "unit": "",
+      "source": {
+        "id": "2",
+        "value": "World Development Indicators"
+      },
+      "sourceNote": "Mortality from CVD, cancer, diabetes or CRD is the percent of 30-year-old-people who would die before their 70th birthday from any of cardiovascular disease, cancer, diabetes,  or chronic respiratory disease, assuming that s/he would experience current mortality rates at every age and s/he would not die from any other cause of death (e.g., injuries or HIV/AIDS).",
+      "sourceOrganization": "World Health Organization, Global Health Observatory Data Repository (http://apps.who.int/ghodata/)., World Health Organization (WHO), uri: https://www.who.int/data/gho",
+      "topics": [
+        {
+          "id": "8",
+          "value": "Health "
+        }
+      ]
+    }
+  ]
+]

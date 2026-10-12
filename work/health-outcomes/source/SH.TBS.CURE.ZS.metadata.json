@@ -1,0 +1,27 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": "50",
+    "total": 1
+  },
+  [
+    {
+      "id": "SH.TBS.CURE.ZS",
+      "name": "Tuberculosis treatment success rate (% of new cases)",
+      "unit": "",
+      "source": {
+        "id": "2",
+        "value": "World Development Indicators"
+      },
+      "sourceNote": "Tuberculosis treatment success rate is the percentage of all new tuberculosis cases (or new and relapse cases for some countries) registered under a national tuberculosis control programme in a given year that successfully completed treatment, with or without bacteriological evidence of success (\"cured\" and \"treatment completed\" respectively).",
+      "sourceOrganization": "Global Tuberculosis Report, World Health Organization (WHO)",
+      "topics": [
+        {
+          "id": "8",
+          "value": "Health "
+        }
+      ]
+    }
+  ]
+]

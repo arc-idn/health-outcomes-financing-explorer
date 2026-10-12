@@ -1,0 +1,31 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": "50",
+    "total": 1
+  },
+  [
+    {
+      "id": "SH.STA.SMSS.ZS",
+      "name": "People using safely managed sanitation services (% of population)",
+      "unit": "",
+      "source": {
+        "id": "2",
+        "value": "World Development Indicators"
+      },
+      "sourceNote": "The percentage of people using improved sanitation facilities that are not shared with other households and where excreta are safely disposed of in situ or transported and treated offsite. Improved sanitation facilities include flush/pour flush to piped sewer systems, septic tanks or pit latrines: ventilated improved pit latrines, composting toilets or pit latrines with slabs.",
+      "sourceOrganization": "WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, note: Aggregate data by groups are computed based on the groupings for the World Bank fiscal year in which the data was released by the WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene., publisher: WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;\nUN Children's Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene",
+      "topics": [
+        {
+          "id": "8",
+          "value": "Health "
+        },
+        {
+          "id": "6",
+          "value": "Environment "
+        }
+      ]
+    }
+  ]
+]

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Health Outcomes & Financing Explorer</title>
+<meta name="description" content="Track health outcomes, service coverage and MDG/SDG indicators, and compare them with health financing across countries and years.">
+<link rel="stylesheet" href="../health-financing/assets/tokens.css?v=20260809k">
+<link rel="stylesheet" href="app.css?v=20261003d">
+<link rel="stylesheet" href="trend.css?v=20261003d">
+<script src="gate.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the analysis</a>
+<header class="masthead"><div class="wrap">
+ <span class="home">Wellbeing for Billions</span>
+ <h1>Health Outcomes &amp; Financing Explorer</h1>
+ <p>Are stronger health systems delivering healthier lives? Track outcomes and service coverage, assess MDG and SDG progress, and compare results with health financing.</p>
+ <div class="scope" id="scope">Loading country and indicator coverage.</div>
+</div></header>
+<nav class="tabs" aria-label="Analysis views"><div class="wrap" id="tabs"></div></nav>
+<main id="main" class="wrap" tabindex="-1">
+ <section class="controls" id="controls" aria-label="Choose country and indicators"></section>
+ <div id="content" aria-busy="true"><p role="status">Loading official health and financing data.</p></div>
+ <p id="notification" role="status" aria-live="polite"></p>
+</main>
+<footer class="wrap footer">
+ <p>Health estimates: World Bank WDI, UN agencies and WHO. Financing: WHO Global Health Expenditure Database.</p>
+ <p><a href="https://sdgs.un.org/goals/goal3">UN SDG framework</a> · <a href="https://unstats.un.org/unsd/mdg/Host.aspx?Content=Indicators/OfficialList.htm">UN MDG framework</a> · <a href="https://www.who.int/data/uhc-2025-technical-appendices-and-regional-data-tables">WHO UHC 2025 methods</a></p>
+ <p class="small">A personal working page. Not an official surface of any institution.</p>
+</footer>
+<noscript><p>This explorer requires JavaScript. <a href="data/outcomes.csv">Download the health indicator data as CSV.</a></p></noscript>
+<script type="module" src="main.js?v=20261003d"></script>
+</body></html>

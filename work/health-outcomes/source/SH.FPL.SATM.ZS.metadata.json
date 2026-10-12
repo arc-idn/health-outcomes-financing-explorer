@@ -1,0 +1,27 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": "50",
+    "total": 1
+  },
+  [
+    {
+      "id": "SH.FPL.SATM.ZS",
+      "name": "Demand for family planning satisfied by modern methods (% of married women with demand for family planning)",
+      "unit": "",
+      "source": {
+        "id": "2",
+        "value": "World Development Indicators"
+      },
+      "sourceNote": "Demand for family planning satisfied by modern methods refers to the percentage of married women ages 15-49 years whose need for family planning is satisfied with modern methods.",
+      "sourceOrganization": "Demographic and Health Surveys (DHS), uri: FP_NADM_W_PDM, date accessed: 2026-06-15",
+      "topics": [
+        {
+          "id": "8",
+          "value": "Health "
+        }
+      ]
+    }
+  ]
+]

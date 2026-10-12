@@ -1,0 +1,31 @@
+[
+  {
+    "page": 1,
+    "pages": 1,
+    "per_page": "50",
+    "total": 1
+  },
+  [
+    {
+      "id": "SH.STA.BRTC.ZS",
+      "name": "Births attended by skilled health staff (% of total)",
+      "unit": "",
+      "source": {
+        "id": "2",
+        "value": "World Development Indicators"
+      },
+      "sourceNote": "Births attended by skilled health staff are the percentage of deliveries attended by personnel trained to give the necessary supervision, care, and advice to women during pregnancy, labor, and the postpartum period; to conduct deliveries on their own; and to care for newborns.",
+      "sourceOrganization": "State of the World's Children, UN Children's Fund (UNICEF);\nChildinfo, UN Children's Fund (UNICEF);\nDemographic and Health Surveys, Demographic and Health Surveys (DHS) Program",
+      "topics": [
+        {
+          "id": "8",
+          "value": "Health "
+        },
+        {
+          "id": "17",
+          "value": "Gender"
+        }
+      ]
+    }
+  ]
+]
