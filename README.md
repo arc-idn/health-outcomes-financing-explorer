@@ -8,6 +8,10 @@ This repository holds everything the tool needs: the application, its published 
 the health financing data it reads, the frozen source responses and the scripts that
 rebuild the data from them.
 
+## Microsite
+https://arc-idn.github.io/health-outcomes-financing-explorer/tools/health-outcomes/
+Password: nectar-6934
+
 ## Run it locally
 
 No build step is needed. Serve the `site/` folder and open the tool:
